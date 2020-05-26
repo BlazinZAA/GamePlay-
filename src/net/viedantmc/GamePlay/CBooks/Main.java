@@ -12,6 +12,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         getCommand("coloredbooks").setExecutor(new PreviewCommand());
         getServer().getPluginManager().registerEvents(new FormatListener(), (Plugin)this);
+        getCommand("MultiPackageTest").setExecutor(new net.viedantmc.GamePlay.ArmorStandFix.ArmorStandCrashFix());
     }
 
     public void onDisable() {}
