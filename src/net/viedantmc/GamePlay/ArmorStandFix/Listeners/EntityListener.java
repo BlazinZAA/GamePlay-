@@ -26,7 +26,7 @@ public class EntityListener implements Listener {
         Entity entity = event.getEntity();
         if (entity.getType() == EntityType.ARMOR_STAND) {
             ArmorStand stand = (ArmorStand)entity;
-            if (getPlugin().getConfigfile().getBoolean("settings.betterchairs")) {
+            if (getPlugin().getConfigfile().getBoolean("ArmorStandSettings.betterchairs")) {
                 getPlugin().getServer().getScheduler().runTaskLater((Plugin)this.plugin, () -> {
                     if (paramArmorStand.isVisible())
                         paramEntity.setGravity(false);

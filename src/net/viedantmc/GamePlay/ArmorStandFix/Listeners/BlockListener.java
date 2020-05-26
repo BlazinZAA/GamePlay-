@@ -21,7 +21,7 @@ public class BlockListener implements Listener {
 
     @EventHandler
     public void onPistonRetrackt(BlockPistonRetractEvent event) {
-        if (getPlugin().getConfigfile().getBoolean("settings.block-stacking")) {
+        if (getPlugin().getConfigfile().getBoolean("ArmorStandSettings.block-stacking")) {
             int found = 0;
             ArrayList<Entity> remove = new ArrayList<>();
             if (event.getBlocks().size() > 0) {
