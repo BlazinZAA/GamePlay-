@@ -30,7 +30,7 @@ public class EntityListener implements Listener {
                 getPlugin().getServer().getScheduler().runTaskLater((Plugin)this.plugin, () -> {
                     if (paramArmorStand.isVisible())
                         paramEntity.setGravity(false);
-                }1L);
+                }1L)
             } else {
                 entity.setGravity(false);
             }
