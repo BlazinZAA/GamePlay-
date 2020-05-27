@@ -1,4 +1,4 @@
-package net.viedantmc.GamePlay.ArmorStandFix.Files;
+package net.viedantmc.GamePlay.Files;
 
 import java.io.File;
 import java.io.IOException;

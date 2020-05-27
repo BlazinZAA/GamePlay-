@@ -1,23 +1,22 @@
 package net.viedantmc.GamePlay.ArmorStandFix.Listeners;
 
 
-import net.viedantmc.GamePlay.ArmorStandFix.ArmorStandCrashFix;
+import net.viedantmc.GamePlay.Main;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntitySpawnEvent;
-import org.bukkit.plugin.Plugin;
 
 public class EntityListener implements Listener {
-    private ArmorStandCrashFix plugin;
+    public Main plugin;
 
-    public EntityListener(ArmorStandCrashFix plugin) {
+    public EntityListener(Main plugin) {
         this.plugin = plugin;
     }
 
-    private ArmorStandCrashFix getPlugin() {
+    public Main getPlugin() {
         return this.plugin;
     } // hi
 

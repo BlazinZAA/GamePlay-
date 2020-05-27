@@ -1,7 +1,8 @@
 package net.viedantmc.GamePlay.ArmorStandFix.Listeners;
 
-import net.viedantmc.GamePlay.ArmorStandFix.ArmorStandCrashFix;
 import java.util.ArrayList;
+
+import net.viedantmc.GamePlay.Main;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
@@ -9,13 +10,13 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPistonRetractEvent;
 
 public class BlockListener implements Listener {
-    private ArmorStandCrashFix plugin;
+    private Main plugin;
 
-    public BlockListener(ArmorStandCrashFix plugin) {
+    public BlockListener(Main plugin) {
         this.plugin = plugin;
     }
 
-    private ArmorStandCrashFix getPlugin() {
+    private Main getPlugin() {
         return this.plugin;
     }
 
