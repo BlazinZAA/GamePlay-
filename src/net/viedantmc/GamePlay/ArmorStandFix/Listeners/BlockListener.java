@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import net.viedantmc.GamePlay.Main;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Damageable;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -45,7 +46,7 @@ public class BlockListener implements Listener {
             }
             if (found > 1 && !remove.isEmpty())
                 for (Entity tokill : remove)
-                    tokill.remove();
+                    ((Damageable)tokill).damage(Double.MAX_VALUE);
         }
     }
 }
